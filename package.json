@@ -1,0 +1,22 @@
+{
+  "name": "imf-gadget-api",
+  "version": "1.0.0",
+  "description": "IMG Gadget API Development Challenge",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aniketto",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.3.0",
+    "express": "^4.21.2",
+    "unique-names-generator": "^4.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "prisma": "^6.3.0"
+  }
+}
