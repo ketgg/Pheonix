@@ -13,13 +13,6 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-enum Status {
-  Available
-  Deployed
-  Destroyed
-  Decommissioned
-}
-
 model Gadgets {
   id               String    @id @default(uuid())
   name             String    @unique
@@ -28,4 +21,24 @@ model Gadgets {
   updatedAt        DateTime  @updatedAt
   decommissionedAt DateTime?
   destroyedAt      DateTime?
+}
+
+model Users {
+  id       String @id @default(uuid())
+  name     String
+  email    String @unique
+  password String
+  role     Role   @default(USER)
+}
+
+enum Status {
+  Available
+  Deployed
+  Destroyed
+  Decommissioned
+}
+
+enum Role {
+  USER
+  ADMIN
 }

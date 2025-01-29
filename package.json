@@ -12,7 +12,9 @@
   "license": "ISC",
   "dependencies": {
     "@prisma/client": "^6.3.0",
+    "bcrypt": "^5.1.1",
     "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
     "unique-names-generator": "^4.7.1"
   },
   "devDependencies": {
